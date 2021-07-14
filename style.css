@@ -1,0 +1,259 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* common style & utilities */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fdfdfd;
+}
+
+/* Top Banner Section Styles  */
+.top-banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  background-color: #2d25a0;
+}
+.top-banner-title {
+  width: 485px;
+  height: 230px;
+  line-height: 80px;
+  /* border: 2px solid; */
+}
+.top-banner-title h1 {
+  font-size: 64px;
+  color: #ffffff;
+  margin: 0;
+}
+.top-banner-title a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #e02c6d;
+  padding: 10px 25px;
+}
+
+.top-banner-logo img {
+  width: 556.01px;
+  height: 438px;
+}
+/* Top Banner link animation */
+
+.top-banner-title a:hover {
+  border-radius: 20px;
+  padding: 7px 12px;
+  transition: border-radius 0.7s;
+  transition: padding 0.5s;
+}
+
+/* Top players */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.players {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  width: 1050px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 27px;
+  grid-column-gap: 30px;
+}
+.player {
+  padding: 15px;
+  width: 300px;
+  height: 474px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-img img {
+  width: 300px;
+  height: 256px;
+}
+.player-info h3 {
+  font-size: 28px;
+  color: #18191f;
+  margin-top: 16px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.player-info p {
+  color: #6c6c6c;
+  margin: 0;
+}
+
+/* hr break */
+hr {
+  border: 3px solid rgba(0, 0, 0, 0.068);
+  width: 75%;
+}
+
+/* News section */
+
+.football-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.argentina-news {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  margin-top: 70px;
+}
+.argentina-news .news {
+  width: 505px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.argentina-news .news .news-thumbnail {
+  padding: 15px;
+}
+.argentina-news .news .news-thumbnail img {
+  width: 475px;
+  border-radius: 15px;
+}
+.argentina-news .news .news-info {
+  margin-left: 15px;
+}
+.argentina-news .news .news-info h2 {
+  font-size: 28px;
+  font-weight: 300;
+  color: #18191f;
+}
+.argentina-news .news {
+  color: #6c6c6c;
+}
+
+.author {
+  color: goldenrod;
+  font-size: 15px;
+}
+
+/* Top players */
+
+/* Footer Start */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 483px;
+  margin: 158px auto 63px auto;
+}
+
+.footer .footer-image img {
+  width: 483px;
+  height: 110px;
+  margin-bottom: 20px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+}
+
+.social-icon {
+  background-color: #e7e7e8;
+  /* height: 32px;
+    width: 32px; */
+  width: 170px;
+  height: 32px;
+  color: #969bab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+
+.social-icon:last-child {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.copyright-text {
+  font-size: 18px;
+  color: #000000;
+  width: 240px;
+  height: 31px;
+  font-weight: normal;
+}
+/* Footer End */
+
+/* Responsive page  
+--------------------
+--for mobile devices--*/
+
+@media only screen and (max-width: 688px) {
+  .menu {
+    display: none;
+  }
+
+  .top-banner {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 100%;
+  }
+  .top-banner-title {
+    width: 90%;
+    height: 100%;
+  }
+  .top-banner-title h1 {
+    width: 90%;
+  }
+  .top-banner-logo {
+    width: 90%;
+  }
+
+  .top-banner-logo img {
+    width: 90%;
+    height: 100%;
+    padding-bottom: 50px;
+  }
+  .players {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player {
+    margin-left: 1%;
+  }
+  .football-news {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .argentina-news {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 30px;
+  }
+  .argentina-news .news {
+    width: 84%;
+    margin-left: 15px;
+  }
+  .argentina-news .news .news-thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  footer {
+    font-size: 10px;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 50px;
+  }
+}
